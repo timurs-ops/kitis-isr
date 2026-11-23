@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Проверка · Шаг 05 · JS-события</title>
+<link rel="stylesheet" href="../../tools/checker.css">
+</head>
+<body>
+<header class="top">
+<h1>Шаг 05 · Дни, избранное, таймер — автопроверка</h1>
+<a href="index.html">моя работа</a>
+<a href="README.md">задание</a>
+<button onclick="location.reload()">Перезапустить</button>
+</header>
+<p class="lead">Чекер кликает кнопки, перезагружает страницу (избранное должно пережить F5) и открывает демо-время ?now=2026-11-18T10:30.</p>
+<main class="wrap">
+<section class="pane">
+<div class="sizes">Ширина:
+<button data-w="360">360</button><button data-w="768">768</button><button data-w="1280">1280</button><button data-w="">авто</button>
+</div>
+<iframe id="frame" title="Твоя работа"></iframe>
+</section>
+<aside class="pane">
+<div id="summary" class="summary">…</div>
+<ol id="checks"></ol>
+<div id="verdict" class="verdict"></div>
+</aside>
+</main>
+<script src="../../tools/checker.js"></script>
+<script src="../../data/schedule.js"></script>
+<script src="checks.js"></script>
+<script>
+document.querySelectorAll('.sizes button').forEach(function (b) {
+  b.addEventListener('click', function () {
+    document.getElementById('frame').style.width = b.dataset.w ? b.dataset.w + 'px' : '';
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* Шаг 07 · стили готовы — фокус на fetch. Стили карточки можно перенести из шага 4. */
+body { margin: 0; background: #F4F5F7; color: #15171C; font: 16px/1.5 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 24px 16px; }
+h1 { font-size: 24px; }
+#status { color: #5B6270; font-weight: 600; }
+#retry { border: 0; border-radius: 9px; padding: 9px 16px; background: #2D5BE3; color: #fff; font-weight: 700; cursor: pointer; margin-bottom: 12px; }
+#app { display: flex; flex-direction: column; gap: 10px; }
+.day-title { font-size: 20px; font-weight: 700; margin: 8px 0; }
+.lesson-card { display: flex; align-items: center; gap: 14px; background: #fff; border: 1px solid #E3E6EB; border-left: 5px solid #C9CED6; border-radius: 12px; padding: 14px 18px; }
+.lesson-num { flex: none; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; background: #F1F3F6; }
+.lesson-subject { font-weight: 600; }
+.lesson-meta { color: #5B6270; font-size: 13.5px; }
+.empty { color: #5B6270; padding: 16px; }

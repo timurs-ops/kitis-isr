@@ -1,0 +1,28 @@
+/* Шаг 02 · карточка пары. Спецификация и цвета — в README.md. */
+
+body { margin: 0; background: #F4F5F7; color: #15171C; font: 16px/1.5 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 24px 16px; }
+h1 { font-size: 24px; letter-spacing: -0.01em; }
+
+.lessons {
+  display: flex;
+  flex-direction: column;
+  /* TODO: gap, чтобы карточки не слипались (≥10px) */
+}
+
+.lesson-card {
+  /* TODO по README:
+     - display: flex; align-items: center; gap: 14px;
+     - border-left: 5px solid var(--subject-color);
+     - border-radius: 12px; padding: 14px 18px;
+     - background: linear-gradient(90deg, ОТТЕНК 0%, ОТТЕНК-СВЕТЛЕЕ 45%, #FFFFFF 100%);
+       (оттенки — готовые значения из таблицы README) */
+}
+
+.lesson-num {
+  /* TODO: 40×40, border-radius 10px, белый фон, border 1px solid #E3E6EB,
+     color: var(--subject-color); font-weight: 700; центрирование через flex */
+}
+
+.lesson-subject { font-weight: 600; }
+.lesson-meta { color: #5B6270; font-size: 13.5px; }

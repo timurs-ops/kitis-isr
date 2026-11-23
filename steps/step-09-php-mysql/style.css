@@ -1,0 +1,15 @@
+/* Шаг 09 · минимальные стили (готово). Фокус — на PHP. */
+body { margin: 0; background: #F4F5F7; color: #15171C; font: 16px/1.5 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+main { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
+h1 { font-size: 26px; }
+h2 { font-size: 19px; margin-top: 28px; }
+form { background: #fff; border: 1px solid #E3E6EB; border-radius: 14px; padding: 18px; }
+label { display: block; font-weight: 600; font-size: 14px; margin-top: 10px; }
+input, select { display: block; width: 100%; box-sizing: border-box; margin-top: 4px; padding: 9px 12px; border: 1px solid #C9CED6; border-radius: 9px; font: inherit; }
+button { margin-top: 14px; border: 0; border-radius: 9px; padding: 10px 16px; background: #2D5BE3; color: #fff; font-weight: 700; cursor: pointer; }
+.err { color: #B42318; font-size: 13.5px; min-height: 18px; display: block; }
+table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #E3E6EB; border-radius: 12px; overflow: hidden; }
+th, td { padding: 10px 12px; border-bottom: 1px solid #EEF0F3; text-align: left; font-size: 14px; vertical-align: top; }
+thead th { background: #F7F8FA; font-size: 12.5px; text-transform: uppercase; letter-spacing: .04em; color: #5B6270; }
+a { color: #2D5BE3; }
+small { color: #5B6270; }

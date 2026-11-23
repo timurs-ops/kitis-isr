@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Проверка · Шаг 03 · Bootstrap</title>
+<link rel="stylesheet" href="../../tools/checker.css">
+</head>
+<body>
+<header class="top">
+<h1>Шаг 03 · Неделя (Bootstrap) — автопроверка</h1>
+<a href="index.html">моя работа</a>
+<a href="README.md">задание</a>
+<button onclick="location.reload()">Перезапустить</button>
+</header>
+<p class="lead">Проверки 9–10 реально меняют ширину рамки: 360px — дни стопкой, 1280px — в ряд. Кнопки ширины — для ручной проверки.</p>
+<main class="wrap">
+<section class="pane">
+<div class="sizes">Ширина:
+<button data-w="360">360</button><button data-w="768">768</button><button data-w="1280">1280</button><button data-w="">авто</button>
+</div>
+<iframe id="frame" title="Твоя работа"></iframe>
+</section>
+<aside class="pane">
+<div id="summary" class="summary">…</div>
+<ol id="checks"></ol>
+<div id="verdict" class="verdict"></div>
+</aside>
+</main>
+<script src="../../tools/checker.js"></script>
+<script src="checks.js"></script>
+<script>
+document.querySelectorAll('.sizes button').forEach(function (b) {
+  b.addEventListener('click', function () {
+    document.getElementById('frame').style.width = b.dataset.w ? b.dataset.w + 'px' : '';
+  });
+});
+</script>
+</body>
+</html>

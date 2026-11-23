@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Шаг 6 · Регистрация и вход</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Аккаунт КИТиС-ДЭ</h1>
+<p class="note">Учебный прототип: данные хранятся только в твоём браузере (localStorage).</p>
+
+<section>
+<h2>Регистрация</h2>
+<form id="reg-form" novalidate>
+  <label>ФИО
+    <input id="fio" name="fio" type="text" placeholder="Иванов Иван Иванович" autocomplete="name">
+  </label>
+  <span class="field-error" data-error-for="fio"></span>
+
+  <label>Телефон
+    <input id="phone" name="phone" type="tel" placeholder="+7(___)___-__-__" autocomplete="tel">
+  </label>
+  <span class="field-error" data-error-for="phone"></span>
+
+  <label>E-mail
+    <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email">
+  </label>
+  <span class="field-error" data-error-for="email"></span>
+
+  <label>Пароль
+    <input id="password" name="password" type="password" autocomplete="new-password">
+  </label>
+  <span class="field-error" data-error-for="password"></span>
+
+  <label>Повтори пароль
+    <input id="password2" name="password2" type="password" autocomplete="new-password">
+  </label>
+  <span class="field-error" data-error-for="password2"></span>
+
+  <button type="submit">Зарегистрироваться</button>
+  <p id="reg-success" class="success"></p>
+</form>
+</section>
+
+<section>
+<h2>Вход</h2>
+<form id="login-form" novalidate>
+  <label>E-mail
+    <input id="login-email" type="email" autocomplete="email">
+  </label>
+  <label>Пароль
+    <input id="login-password" type="password" autocomplete="current-password">
+  </label>
+  <button type="submit">Войти</button>
+  <p id="login-error" class="field-error"></p>
+</form>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

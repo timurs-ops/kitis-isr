@@ -1,0 +1,19 @@
+/* Шаг 05 · стили готовы — фокус на JS. Стили карточки можно перенести из шага 2/4. */
+body { margin: 0; background: #F4F5F7; color: #15171C; font: 16px/1.5 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
+h1 { font-size: 24px; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 16px; }
+.days { display: flex; flex-wrap: wrap; gap: 6px; }
+.day-btn { border: 1px solid #DCE0E6; background: #fff; border-radius: 9px; padding: 8px 13px; font-weight: 600; cursor: pointer; }
+.day-btn.active { background: #15171C; color: #fff; border-color: #15171C; }
+#fav-btn { border: 1px solid #DCE0E6; background: #fff; border-radius: 9px; padding: 8px 13px; cursor: pointer; font-weight: 600; }
+#fav-btn[aria-pressed="true"] { background: #FFF4D6; border-color: #EFDCA0; }
+#timer { font-weight: 700; color: #E06A1B; }
+#app { display: flex; flex-direction: column; gap: 10px; }
+.day-title { font-size: 20px; font-weight: 700; margin: 8px 0; }
+.lesson-card { display: flex; align-items: center; gap: 14px; background: #fff; border: 1px solid #E3E6EB; border-left: 5px solid #C9CED6; border-radius: 12px; padding: 14px 18px; }
+.lesson-card.current { outline: 2px solid #FF8A3D; outline-offset: 1px; }
+.lesson-num { flex: none; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; background: #F1F3F6; }
+.lesson-subject { font-weight: 600; }
+.lesson-meta { color: #5B6270; font-size: 13.5px; }
+.empty { color: #5B6270; padding: 16px; }

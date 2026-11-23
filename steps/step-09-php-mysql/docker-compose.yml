@@ -1,0 +1,33 @@
+# Бонус полного трека. Запуск: docker compose up -d
+# Сайт: http://localhost:8080 · Adminer: http://localhost:8081 (сервер: db, пользователь: root, пароль пустой)
+# schema.sql импортируется автоматически при ПЕРВОМ старте контейнера db.
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+    environment:
+      DB_HOST: db
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_DATABASE: kitis_de
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    volumes:
+      - dbdata:/var/lib/mysql
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+
+  adminer:
+    image: adminer
+    ports:
+      - "8081:8080"
+    depends_on:
+      - db
+
+volumes:
+  dbdata:
